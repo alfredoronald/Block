@@ -1,0 +1,75 @@
+<main>
+    <div class="nav">
+        <a href="">
+            <img src="/Logo.png" alt="">
+        </a>
+        <li class="nav-links">
+            <a href="">Todas</a>
+            <a href="">Mas valoradas</a>
+            <a href="">Menos valoradas</a>
+        </li>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Busca tu pelicula favorita" name="search">
+            <svg width="65" height="100" viewBox="0 0 72 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H68C70.2091 0 72 1.79086 72 4V40C72 42.2091 70.2091 44 68 44H0V0Z" fill="#FED941"/>
+            <path d="M33 12C29.1459 12 26 15.1459 26 19C26 22.8541 29.1459 26 33 26C34.748 26 36.345 25.348 37.5742 24.2812L38 24.707V26L44 32L46 30L40 24H38.707L38.2812 23.5742C39.348 22.345 40 20.748 40 19C40 15.1459 36.8541 12 33 12ZM33 14C35.7733 14 38 16.2267 38 19C38 21.7733 35.7733 24 33 24C30.2267 24 28 21.7733 28 19C28 16.2267 30.2267 14 33 14Z" fill="black"/>
+            </svg>
+        </input>
+    </div>
+        
+</main>
+<style>
+    main{
+        margin-top: -30px;
+        width: 1280px;
+        padding: 20px 83px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .nav li{
+        
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav li a{
+        font-weight: 400;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        text-decoration: none;
+    }
+    .nav li a:hover{
+        color: #FED941;
+        text-decoration: underline;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        flex: 1 0 0;
+    }
+    input{
+        width: 100%;
+        display: flex;
+        padding: 11px 12px;
+        align-items: flex-start;
+        gap: 8px;
+        flex: 1 0 0;
+        border-radius: 8px 0px 0px 8px;
+        border: 1px solid var(--primary, #FED941);
+        background: var(--white, #FFFFFE);
+        
+    }
+    
+</style>

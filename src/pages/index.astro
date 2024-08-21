@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import NavBar from '../components/NavBar.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<NavBar/>
+		<section>
+			<div class="presentation">
+				<img src="./mulan.png" alt="">
+
+			</div>
+			<div class="icon">
+				<img src="./icon.svg" alt="icon">
+				<img src="./icon.svg" alt="icon">
+				<img src="./icon.svg" alt="icon">
+			</div>
+		</section>
+		
+	</main>
+</Layout>
+
+<style>
+	main {
+		border: none;
+		margin: 0;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		
+	}
+	section{
+		padding: 0 92px;
+		justify-content: center;
+	}
+	.presentation img{
+		display: flex;
+		justify-content: center;
+		width: 1268px;
+		height: 310px;
+		flex-shrink: 0;
+		
+	}
+	.icon{
+		height: 12px;
+		width: 12px;
+		display: inline;
+		fill: var(--white, #FFFFFE);
+	}
+
+	
+</style>
