@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import NavBar from '../components/NavBar.astro';
+import Button from '../components/Button.astro';
+
 
 ---
 
@@ -10,17 +12,26 @@ import NavBar from '../components/NavBar.astro';
 		<NavBar/>
 		<section>
 			<div class="presentation">
-				<img src="./mulan.png" alt="">
-
+				<img src="./mulan.png" alt="img-mulan" >
+				<div class="button">
+					<Button>
+						Ver Pelicula
+					</Button>
+					<Button>
+						Ver Despues
+					</Button>
+				</div>
 			</div>
-			<div class="icon">
-				<img src="./icon.svg" alt="icon">
-				<img src="./icon.svg" alt="icon">
-				<img src="./icon.svg" alt="icon">
-			</div>
+			
 		</section>
+		<div class="icon">
+			<img src="./icon.svg" alt="icon">
+			<img src="./icon.svg" alt="icon">
+			<img src="./icon.svg" alt="icon">
+		</div>
 		
 	</main>
+	
 </Layout>
 
 <style>
@@ -36,6 +47,7 @@ import NavBar from '../components/NavBar.astro';
 		
 	}
 	section{
+	
 		padding: 0 92px;
 		justify-content: center;
 	}
@@ -47,12 +59,23 @@ import NavBar from '../components/NavBar.astro';
 		flex-shrink: 0;
 		
 	}
+	.button{
+		margin-left: 60px;
+		margin-top: -70px;
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;	
+	}
 	.icon{
+		cursor: pointer;
+		margin-left: 86%;
 		height: 12px;
 		width: 12px;
 		display: inline;
 		fill: var(--white, #FFFFFE);
+		
 	}
+
 
 	
 </style>
